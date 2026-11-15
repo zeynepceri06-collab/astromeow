@@ -26,7 +26,29 @@ const ROCK_INFO = {
 
 var is_player_near: bool = false
 
+@onready var info_label: Label = $Label # İçine eklediğin Label'ın adı
+
 func _ready() -> void:
+	if info_label:
+		info_label.visible = false
+	body_entered.connect(_on_body_entered)
+	body_exited.connect(_on_body_exited)
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == "CatPlayer":
+		body.nearby_interactable = self
+		if info_label:
+			info_label.visible = true
+
+func _on_body_exited(body: Node2D) -> void:
+	if body.name == "CatPlayer" and body.nearby_interactable == self:
+		body.nearby_interactable = null
+		if info_label:
+			info_label.visible = false
+
+func interact() -> void:
+	GameManager.collect_rock(rock_type)
+	queue_free()
 	if has_node("Sprite2D") and ROCK_COLORS.has(rock_type):
 		$Sprite2D.modulate = ROCK_COLORS[rock_type]
 
