@@ -1,17 +1,20 @@
 [gd_scene format=3 uid="uid://bc44afvxaqb10"]
 
 [ext_resource type="Script" uid="uid://ducysjmvwfbkn" path="res://CatPlayer.gd" id="1_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://c2hpp8wf0jslp" path="res://icon.svg" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://c1la4le6jcsur" path="res://Adsız Tasarım (1) (1).png" id="2_grh7w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vki55"]
-size = Vector2(128, 128)
+size = Vector2(84, 90)
 
 [node name="CatPlayer" type="CharacterBody2D" unique_id=1714807404]
 position = Vector2(179, 507)
 script = ExtResource("1_0xm2m")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=39040301]
-texture = ExtResource("2_h2yge")
+position = Vector2(2, -2.0000305)
+scale = Vector2(0.125, 0.12)
+texture = ExtResource("2_grh7w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1640201804]
+position = Vector2(0, -3)
 shape = SubResource("RectangleShape2D_vki55")
