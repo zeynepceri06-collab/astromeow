@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Astromeow"
-run/main_scene="uid://coqhhacnuemyf"
+run/main_scene="uid://tp8kwtdxpb0p"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
