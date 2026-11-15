@@ -141,11 +141,17 @@ func check_moon_win_condition() -> void:
 	emit_signal("game_over", true, "Mission Success! All 5 target lunar samples collected!")
 	
 func reset_game() -> void:
-	tasks["polyethylene"] = false
-	tasks["space_food"] = false
-	tasks["mli"] = false
+	tasks = {
+		"polyethylene": false,
+		"space_food": false,
+		"mli": false
+	}
 	time_left = 60.0
-	is_timer_running = false
+	is_timer_running = true
 	current_phase = "SHIP"
-	generate_random_targets()
+	
+	collected_rocks = {
+		"Basalt": 0,
+		"Anorthosite": 0
+	}
 	emit_signal("stats_updated")

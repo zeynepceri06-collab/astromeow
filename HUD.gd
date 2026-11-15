@@ -5,7 +5,7 @@ extends CanvasLayer
 @onready var end_panel = $EndPanel
 @onready var end_message = $EndPanel/EndMessage
 @onready var rock_info_label = $RockInfoLabel
-@onready var play_again_button = $EndPanel/PlayAgainButton
+@onready var play_again_button: BaseButton = find_child("PlayAgainButton", true, false)
 
 func _ready() -> void:
 	end_panel.visible = false
