@@ -24,6 +24,14 @@ texture = ExtResource("3_b7sdf")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PolyethyleneStation" unique_id=560745279]
 shape = SubResource("RectangleShape2D_vki55")
 
+[node name="Label" type="Label" parent="PolyethyleneStation" unique_id=297277113]
+visible = false
+offset_left = -206.0
+offset_top = -89.0
+offset_right = 131.0
+offset_bottom = -66.0
+text = "Polyethylene Bricks: Blocks space radiation!"
+
 [node name="FoodStation" type="Area2D" parent="." unique_id=2015317715]
 modulate = Color(1, 0.1254902, 0.23137255, 1)
 position = Vector2(336, 151)
@@ -38,6 +46,14 @@ texture = ExtResource("3_b7sdf")
 position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_vki55")
 
+[node name="Label" type="Label" parent="FoodStation" unique_id=1112468847]
+visible = false
+offset_left = -141.0
+offset_top = 68.0
+offset_right = 148.0
+offset_bottom = 91.0
+text = "Food Station: Let's get some cat food!"
+
 [node name="MLIStation" type="Area2D" parent="." unique_id=2020264141]
 modulate = Color(0.09019608, 0.38039216, 1, 1)
 position = Vector2(479, 152)
@@ -50,6 +66,14 @@ texture = ExtResource("3_b7sdf")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MLIStation" unique_id=132650077]
 shape = SubResource("RectangleShape2D_vki55")
 
+[node name="Label" type="Label" parent="MLIStation" unique_id=1173731598]
+visible = false
+offset_left = -126.0
+offset_top = -93.0
+offset_right = 186.0
+offset_bottom = -70.0
+text = "Set barriers to retard the flow of energy!"
+
 [node name="CockpitConsole" type="Area2D" parent="." unique_id=244412930]
 position = Vector2(540, 325)
 script = ExtResource("4_a15gb")
@@ -60,7 +84,7 @@ texture = ExtResource("3_b7sdf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CockpitConsole" unique_id=1875107066]
 top_level = true
-position = Vector2(539, 325)
+position = Vector2(742, 300)
 shape = SubResource("RectangleShape2D_ehyl8")
 
 [node name="CatPlayer" parent="." unique_id=1714807404 instance=ExtResource("1_ii3wf")]

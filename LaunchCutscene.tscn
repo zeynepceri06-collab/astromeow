@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cmh3soe48b6de"]
+
+[ext_resource type="Script" uid="uid://bv3lketifhgvs" path="res://LaunchCutscene.gd" id="1_urpuw"]
+[ext_resource type="Texture2D" uid="uid://cnfht6x5tidr2" path="res://earth.png" id="2_3f5o8"]
+[ext_resource type="Texture2D" uid="uid://baajuhu8oejwf" path="res://moon.png" id="3_j75rv"]
+[ext_resource type="Texture2D" uid="uid://oh335a07abce" path="res://spaceRockets_001.png" id="4_18enw"]
+
+[sub_resource type="FontVariation" id="FontVariation_urpuw"]
+
+[node name="LaunchCutscene" type="Node2D" unique_id=1548249220]
+script = ExtResource("1_urpuw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1308891731]
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1153.0
+offset_bottom = 647.0
+color = Color(0.023529412, 0.03137255, 0.078431375, 1)
+
+[node name="EarthSprite" type="Sprite2D" parent="." unique_id=1892287209]
+position = Vector2(206, 307.375)
+scale = Vector2(0.4920635, 0.49279836)
+texture = ExtResource("2_3f5o8")
+
+[node name="MoonSprite" type="Sprite2D" parent="." unique_id=2064481149]
+position = Vector2(1033, 315)
+scale = Vector2(0.13159184, 0.13378914)
+texture = ExtResource("3_j75rv")
+
+[node name="ShipSprite" type="Sprite2D" parent="." unique_id=807784353]
+position = Vector2(490, 308)
+rotation = 1.5707964
+scale = Vector2(0.45081967, 0.36096257)
+texture = ExtResource("4_18enw")
+
+[node name="Label" type="Label" parent="." unique_id=2115193169]
+offset_left = 302.0
+offset_top = 33.0
+offset_right = 841.0
+offset_bottom = 126.0
+theme_override_fonts/font = SubResource("FontVariation_urpuw")
+theme_override_font_sizes/font_size = 32
+text = "Moon is 3.7x smaller than Earth!
+"
+horizontal_alignment = 1

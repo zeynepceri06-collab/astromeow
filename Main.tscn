@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://f763oftig5um" path="res://Main.gd" id="1_r0du0"]
 [ext_resource type="PackedScene" uid="uid://bi1ovrixv6v4c" path="res://ShipInterior.tscn" id="2_cm0pq"]
-[ext_resource type="PackedScene" uid="uid://corny8aks3kiv" path="res://HUD.tscn" id="3_fos0i"]
 
 [node name="Main" type="Node2D" unique_id=1795465811]
 script = ExtResource("1_r0du0")
@@ -12,5 +11,3 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="ShipInterior" parent="." unique_id=1216393957 instance=ExtResource("2_cm0pq")]
-
-[node name="HUD" parent="." unique_id=1034914019 instance=ExtResource("3_fos0i")]

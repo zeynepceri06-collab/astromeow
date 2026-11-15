@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bhgg12kbqqrkx"]
+
+[ext_resource type="Script" uid="uid://dwlmj3gym37sc" path="res://LunarRock.gd" id="1_djy0l"]
+[ext_resource type="Texture2D" uid="uid://c2hpp8wf0jslp" path="res://icon.svg" id="2_hncyk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vki55"]
+radius = 26.0
+
+[node name="LunarRock" type="Area2D" unique_id=515775901]
+script = ExtResource("1_djy0l")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1575413548]
+scale = Vector2(0.375, 0.359375)
+texture = ExtResource("2_hncyk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=172920894]
+shape = SubResource("CircleShape2D_vki55")

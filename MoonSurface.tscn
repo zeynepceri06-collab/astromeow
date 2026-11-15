@@ -1,74 +1,9 @@
 [gd_scene format=3 uid="uid://c1vaupuegwnlk"]
 
 [ext_resource type="PackedScene" uid="uid://bc44afvxaqb10" path="res://CatPlayer.tscn" id="1_8ysln"]
-[ext_resource type="Script" uid="uid://dwlmj3gym37sc" path="res://LunarRock.gd" id="2_ss2c7"]
-[ext_resource type="Texture2D" uid="uid://c2hpp8wf0jslp" path="res://icon.svg" id="3_pc3p3"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_vki55"]
-radius = 26.0
+[ext_resource type="Script" uid="uid://ca5n5yhe00nnk" path="res://MoonSurface.gd" id="1_yc0y6"]
 
 [node name="MoonSurface" type="Node2D" unique_id=214586296]
-
-[node name="BasaltRock" type="Area2D" parent="." unique_id=783810202]
-script = ExtResource("2_ss2c7")
-
-[node name="Sprite2D" type="Sprite2D" parent="BasaltRock" unique_id=1133273763]
-position = Vector2(441, 241)
-scale = Vector2(0.375, 0.359375)
-texture = ExtResource("3_pc3p3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BasaltRock" unique_id=35596143]
-position = Vector2(441, 241)
-shape = SubResource("CircleShape2D_vki55")
-
-[node name="BasaltRock2" type="Area2D" parent="." unique_id=1900899927]
-script = ExtResource("2_ss2c7")
-
-[node name="Sprite2D" type="Sprite2D" parent="BasaltRock2" unique_id=603521449]
-position = Vector2(527, 155)
-scale = Vector2(0.375, 0.359375)
-texture = ExtResource("3_pc3p3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BasaltRock2" unique_id=610647723]
-position = Vector2(528, 156)
-shape = SubResource("CircleShape2D_vki55")
-
-[node name="BasaltRock3" type="Area2D" parent="." unique_id=228162571]
-script = ExtResource("2_ss2c7")
-
-[node name="Sprite2D" type="Sprite2D" parent="BasaltRock3" unique_id=385191276]
-position = Vector2(186, 431)
-scale = Vector2(0.375, 0.359375)
-texture = ExtResource("3_pc3p3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BasaltRock3" unique_id=465817234]
-position = Vector2(186, 431)
-shape = SubResource("CircleShape2D_vki55")
-
-[node name="Anarthosi" type="Area2D" parent="." unique_id=1657719201]
-script = ExtResource("2_ss2c7")
-rock_type = "Anorthosite"
-
-[node name="Sprite2D" type="Sprite2D" parent="Anarthosi" unique_id=1015397858]
-position = Vector2(41, 129)
-scale = Vector2(0.375, 0.359375)
-texture = ExtResource("3_pc3p3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Anarthosi" unique_id=448294892]
-position = Vector2(41, 128)
-shape = SubResource("CircleShape2D_vki55")
-
-[node name="Anarthosite" type="Area2D" parent="." unique_id=1472356814]
-script = ExtResource("2_ss2c7")
-rock_type = "Anorthosite"
-
-[node name="Sprite2D" type="Sprite2D" parent="Anarthosite" unique_id=867198033]
-position = Vector2(613, 360)
-scale = Vector2(0.375, 0.359375)
-texture = ExtResource("3_pc3p3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Anarthosite" unique_id=472274994]
-position = Vector2(613, 361)
-shape = SubResource("CircleShape2D_vki55")
+script = ExtResource("1_yc0y6")
 
 [node name="CatPlayer" parent="." unique_id=1714807404 instance=ExtResource("1_8ysln")]

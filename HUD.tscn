@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cgab14e3m46rw" path="res://HUD.gd" id="1_k5de2"]
 
 [node name="HUD" type="CanvasLayer" unique_id=1034914019]
+process_mode = 3
 script = ExtResource("1_k5de2")
 
 [node name="TimerLabel" type="Label" parent="." unique_id=2113847196]
@@ -12,10 +13,10 @@ offset_right = 60.0
 offset_bottom = 43.0
 
 [node name="ChecklistLabel" type="Label" parent="." unique_id=640409084]
-offset_left = 20.0
-offset_top = 40.0
-offset_right = 60.0
-offset_bottom = 63.0
+offset_left = 54.0
+offset_top = 465.0
+offset_right = 95.0
+offset_bottom = 488.0
 
 [node name="EndPanel" type="Panel" parent="." unique_id=463119844]
 offset_right = 87.0
@@ -27,3 +28,18 @@ offset_left = 24.0
 offset_top = 25.0
 offset_right = 64.0
 offset_bottom = 48.0
+
+[node name="PlayAgainButton" type="Button" parent="EndPanel" unique_id=1075554548]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 300.0
+offset_right = 560.0
+offset_bottom = 345.0
+text = "Play Again"
+
+[node name="RockInfoLabel" type="Label" parent="." unique_id=1912164652]
+offset_left = 320.0
+offset_top = 550.0
+offset_right = 360.0
+offset_bottom = 573.0
+horizontal_alignment = 1

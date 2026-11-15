@@ -9,6 +9,10 @@ func _physics_process(_delta: float) -> void:
 	velocity = direction * speed
 	move_and_slide()
 	
+	var screen_size = get_viewport_rect().size
+	global_position.x = clamp(global_position.x, 32.0, screen_size.x - 32.0)
+	global_position.y = clamp(global_position.y, 32.0, screen_size.y - 32.0)
+	
 	# Flip sprite based on movement
 	if direction.x != 0:
 		$Sprite2D.flip_h = direction.x < 0
