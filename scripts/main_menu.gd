@@ -1,6 +1,7 @@
 extends Control
 
 func _ready():
+	HUD.hide()
 	await get_tree().create_timer(2.0).timeout
 	
 	$LogoScreen.hide()

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cqgo6465jeg0f"]
+
+[ext_resource type="Texture2D" uid="uid://ve0xptibjqt5" path="res://assets/screens/Paragraf metniniz (5).png" id="1_wao2c"]
+
+[node name="Control" type="Control" unique_id=2027349756]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=948736045]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=499225388]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.27160493
+anchor_right = 1.0
+anchor_bottom = 1.2716049
+offset_top = 175.99998
+offset_bottom = -176.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wao2c")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true

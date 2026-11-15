@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv6xw23wwo331"
-path="res://.godot/imported/CONGRATULATIONS MISSION COMPLETED.png-132698cdde5a9992871bbff5981385b4.ctex"
+uid="uid://ve0xptibjqt5"
+path="res://.godot/imported/Paragraf metniniz (5).png-8ee3ea1365e0a5cb43b1337e4e169458.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/screens/CONGRATULATIONS MISSION COMPLETED.png"
-dest_files=["res://.godot/imported/CONGRATULATIONS MISSION COMPLETED.png-132698cdde5a9992871bbff5981385b4.ctex"]
+source_file="res://assets/screens/Paragraf metniniz (5).png"
+dest_files=["res://.godot/imported/Paragraf metniniz (5).png-8ee3ea1365e0a5cb43b1337e4e169458.ctex"]
 
 [params]
 

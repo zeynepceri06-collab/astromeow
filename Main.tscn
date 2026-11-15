@@ -6,8 +6,9 @@
 [node name="Main" type="Node2D" unique_id=1795465811]
 script = ExtResource("1_r0du0")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=667155039]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1492247165]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.3019608, 0, 0.53333336, 1)
 
 [node name="ShipInterior" parent="." unique_id=1216393957 instance=ExtResource("2_cm0pq")]
