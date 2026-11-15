@@ -44,12 +44,23 @@ func update_ui() -> void:
 
 func show_end_screen(won: bool, reason: String) -> void:
 	rock_info_label.visible = false
-	end_panel.visible = true
-	end_message.text = ("VICTORY!\n" if won else "MISSION LOST:\n") + reason
-	get_tree().paused = true
+	get_tree().paused = false
+	if won:
+		get_tree().change_scene_to_file("res://scenes/win.tscn")
+	else:
+		get_tree().change_scene_to_file("res://scenes/lost.tscn")
 
 func _on_play_again_pressed() -> void:
 	get_tree().paused = false
 	end_panel.visible = false
 	GameManager.reset_game()
 	get_tree().change_scene_to_file("res://Main.tscn")
+
+func _process(_delta: float) -> void:
+	if get_tree().current_scene == null:
+		return
+	var sahne_adi = get_tree().current_scene.name
+	if sahne_adi in ["MainMenu", "Control", "win", "lost"]:
+		hide()
+	else:
+		show()

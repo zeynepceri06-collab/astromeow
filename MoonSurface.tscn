@@ -2,8 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://bc44afvxaqb10" path="res://CatPlayer.tscn" id="1_8ysln"]
 [ext_resource type="Script" uid="uid://ca5n5yhe00nnk" path="res://MoonSurface.gd" id="1_yc0y6"]
+[ext_resource type="Texture2D" uid="uid://cslaupumfx4s5" path="res://WhatsApp Image 2026-11-15 at 16.02.09.jpeg" id="2_8ysln"]
 
 [node name="MoonSurface" type="Node2D" unique_id=214586296]
 script = ExtResource("1_yc0y6")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1800274363]
+z_index = -1
+position = Vector2(580, 306)
+scale = Vector2(1.187392, 1.1692573)
+texture = ExtResource("2_8ysln")
 
 [node name="CatPlayer" parent="." unique_id=1714807404 instance=ExtResource("1_8ysln")]

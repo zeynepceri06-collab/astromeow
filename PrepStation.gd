@@ -7,6 +7,7 @@ var is_completed: bool = false
 @onready var info_label: Label = $Label
 
 func _ready() -> void:
+	HUD.show()
 	if info_label:
 		info_label.visible = false
 	body_entered.connect(_on_body_entered)

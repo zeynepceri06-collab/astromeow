@@ -1,5 +1,8 @@
 extends Node2D
 
+func _read()->void:
+	HUD.show()
+
 func load_space_flight(direction: String = "OUTBOUND") -> void:
 	if has_node("ShipInterior"):
 		$ShipInterior.queue_free()

@@ -23,14 +23,16 @@ var tasks = {
 }
 
 # Phase 2: Dynamic 5-Rock Mission Targets
-var all_rock_types = ["Basalt", "Anorthosite", "Breccia", "Regolith", "Ilmenite", "Olivine"]
+var all_rock_types = ["HIGH TI BASALT", "Pyroclastic-glass Breccia", "Troctolite", "Shocked Norite", "Ferroan Anorthosite", "Glass-Coated Dimict Breccia", "Regolith Breccia", "Granitic Breccia"]
 const ROCK_DESCRIPTIONS = {
-	"Basalt": "(iron & magnesium)",
-	"Anorthosite": "Bright white highland",
-	"Breccia": "Jagged rock fragments",
-	"Regolith": "Fine, powdery lunar dust",
-	"Ilmenite": "Titanium-iron oxide",
-	"Olivine": "Greenish magnesium-iron crystal"
+	"HIGH TI BASALT": "Find a rock that endured a long period of cooling.",
+	"Pyroclastic-glass Breccia": "Find a rock that is compacted glass deposit.",
+	"Troctolite": "Find a rock that is gem-like.",
+	"Shocked Norite": "Find a rock that is rich in magnesium.",
+	"Ferroan Anorthosite": "Find a rock that formed the moon's first crust.",
+	"Glass-Coated Dimict Breccia": "Find a rock that contains variety of mineral clasts.",
+	"Regolith Breccia": "Find a rock that consists of pieces of lunar crust.",
+	"Granitic Breccia": "Find a rock that is mixed of other fragments."
 }
 var target_rocks: Dictionary = {}
 var collected_rocks: Dictionary = {}
